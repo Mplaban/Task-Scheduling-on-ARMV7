@@ -1,0 +1,212 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.36.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: dcdff M.Plaban, sfsdf, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.36.0.0
+Toolchain Path:  D:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.16
+Assembler:       Armasm.exe V6.16
+Linker/Locator:  ArmLink.exe V6.16
+Library Manager: ArmAr.exe V6.16
+Hex Converter:   FromElf.exe V6.16
+CPU DLL:         SARMCM3.DLL V5.36.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.9.0
+Dialog DLL:      TCM.DLL V1.53.0.0
+ 
+<h2>Project:</h2>
+D:\BITS\2nd sem ME\SES\lab\assg1_sub\assg1.uvprojx
+Project File Date:  03/10/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.16', folder: 'D:\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'Target 1'
+main.c(3): warning: In file included from...
+./tasks_func.h(7): warning: no newline at end of file [-Wnewline-eof]
+void task5(void);
+                 ^
+main.c(43): warning: no previous prototype for function 'SystemClock_Config' [-Wmissing-prototypes]
+void SystemClock_Config(void) {
+     ^
+main.c(43): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void SystemClock_Config(void) {
+^
+static 
+main.c(77): warning: no previous prototype for function 'select_task' [-Wmissing-prototypes]
+uint32_t select_task(int t)
+         ^
+main.c(77): note: declare 'static' if the function is not intended to be used outside of this translation unit
+uint32_t select_task(int t)
+^
+static 
+main.c(92): warning: non-void function does not return a value in all control paths [-Wreturn-type]
+}
+^
+main.c(90): warning: 'break' will never be executed [-Wunreachable-code-break]
+                                    break;
+                                    ^~~~~
+main.c(88): warning: 'break' will never be executed [-Wunreachable-code-break]
+                                    break;
+                                    ^~~~~
+main.c(86): warning: 'break' will never be executed [-Wunreachable-code-break]
+                                    break;
+                                    ^~~~~
+main.c(84): warning: 'break' will never be executed [-Wunreachable-code-break]
+                                    break;
+                                    ^~~~~
+main.c(82): warning: 'break' will never be executed [-Wunreachable-code-break]
+                                                break;
+                                                ^~~~~
+main.c(96): warning: no previous prototype for function 'Systick_initialize' [-Wmissing-prototypes]
+void Systick_initialize (uint32_t ticks)
+     ^
+main.c(96): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void Systick_initialize (uint32_t ticks)
+^
+static 
+main.c(106): warning: no previous prototype for function 'SysTick_Handler' [-Wmissing-prototypes]
+void SysTick_Handler(void)
+     ^
+main.c(106): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void SysTick_Handler(void)
+^
+static 
+main.c(127): warning: no previous prototype for function 'SVC_Handler' [-Wmissing-prototypes]
+void SVC_Handler(void)
+     ^
+main.c(127): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void SVC_Handler(void)
+^
+static 
+main.c(193): warning: no previous prototype for function 'curr_psp' [-Wmissing-prototypes]
+uint32_t curr_psp(){
+         ^
+main.c(193): note: declare 'static' if the function is not intended to be used outside of this translation unit
+uint32_t curr_psp(){
+^
+static 
+main.c(193): warning: this old-style function definition is not preceded by a prototype [-Wstrict-prototypes]
+uint32_t curr_psp(){
+                 ^
+main.c(208): warning: no previous prototype for function 'context_save' [-Wmissing-prototypes]
+void context_save(uint32_t* curr_stack)
+     ^
+main.c(208): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void context_save(uint32_t* curr_stack)
+^
+static 
+main.c(213): warning: no previous prototype for function 'next_task_select' [-Wmissing-prototypes]
+void next_task_select()
+     ^
+main.c(213): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void next_task_select()
+^
+static 
+main.c(213): warning: this old-style function definition is not preceded by a prototype [-Wstrict-prototypes]
+void next_task_select()
+                     ^
+main.c(220): warning: no previous prototype for function 'PendSV_Handler' [-Wmissing-prototypes]
+void PendSV_Handler(void)
+     ^
+main.c(220): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void PendSV_Handler(void)
+^
+static 
+main.c(234): warning: no previous prototype for function 'TIM3_IRQHandler' [-Wmissing-prototypes]
+void TIM3_IRQHandler(void)
+     ^
+main.c(234): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void TIM3_IRQHandler(void)
+^
+static 
+main.c(36): warning: no previous extern declaration for non-static variable 'curr_task_no' [-Wmissing-variable-declarations]
+volatile int curr_task_no;
+             ^
+main.c(36): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+volatile int curr_task_no;
+         ^
+20 warnings generated.
+compiling main.c...
+linking...
+Program Size: Code=3186 RO-data=442 RW-data=12 ZI-data=1748  
+".\Objects\assg1.axf" - 0 Error(s), 20 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.8.0.pack
+                ARM.CMSIS.5.8.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.5.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F4xx_DFP.2.17.0.pack
+                Keil.STM32F4xx_DFP.2.17.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+   * Component: STM32Cube Framework Version: 1.0.0
+   * Component: Classic Version: 1.8.1
+   * Component: Common Version: 1.8.1
+   * Component: Cortex Version: 1.8.1
+   * Component: GPIO Version: 1.8.1
+   * Component: PWR Version: 1.8.1
+   * Component: RCC Version: 1.8.1
+   * Component: Startup Version: 2.6.3
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\Device\STM32F407IGHx
+  .\RTE\_Target_1
+  D:\Users\M.Plaban\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include
+  D:\Users\M.Plaban\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.17.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+  D:\Users\M.Plaban\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.17.0\Drivers\STM32F4xx_HAL_Driver\Inc
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ::Device:STM32Cube Framework:1.0.0 (API)
+
+   * Component: ARM::CMSIS:CORE:5.5.0
+
+   * Component: Keil::Device:STM32Cube Framework:Classic:1.8.1
+      Source file:   MDK\Templates\Src\stm32f4xx_hal_msp.c
+      Source file:   MDK\Templates\Src\stm32f4xx_it.c
+      Source file:   MDK\Templates_LL\Src\main.c
+      Source file:   MDK\Templates\Src\main.c
+      Include file:  CMSIS\Driver\Config\RTE_Device.h
+      Include file:  MDK\Templates\Inc\stm32f4xx_hal_conf.h
+      Include file:  MDK\Templates\Inc\stm32f4xx_it.h
+      Include file:  MDK\Templates\Inc\main.h
+      Include file:  MDK\Templates_LL\Inc\main.h
+
+   * Component: Keil::Device:STM32Cube HAL:Common:1.8.1
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c
+      Include file:  Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h
+
+   * Component: Keil::Device:STM32Cube HAL:Cortex:1.8.1
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cortex.c
+
+   * Component: Keil::Device:STM32Cube HAL:GPIO:1.8.1
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.c
+
+   * Component: Keil::Device:STM32Cube HAL:PWR:1.8.1
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr.c
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr_ex.c
+
+   * Component: Keil::Device:STM32Cube HAL:RCC:1.8.1
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc.c
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc_ex.c
+
+   * Component: Keil::Device:Startup:2.6.3
+      Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\system_stm32f4xx.c
+      Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f407xx.s
+      Source file:   MDK\Device\Source\ARM\STM32F4xx_OTP.s
+      Source file:   MDK\Device\Source\ARM\STM32F40xxx_41xxx_OPT.s
+      Include file:  Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>
